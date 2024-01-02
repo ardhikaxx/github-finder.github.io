@@ -1,10 +1,18 @@
 body {
     font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .main-profil {
-    max-width: 400px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .profil {
@@ -12,6 +20,7 @@ body {
     border-radius: 10px;
     padding: 25px;
     text-align: center;
+    width: 350px;
 }
 
 .search-container {
@@ -70,4 +79,81 @@ body {
     margin-top: 10px;
     display: inline-block;
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .main-profil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .profil {
+        background-color: #0D1117;
+        border-radius: 10px;
+        padding: 25px;
+        text-align: center;
+        width: 320px;
+    }
+    
+    .search-container {
+        margin-bottom: 10px;
+    }
+    
+    .search-profil {
+        border: 0;
+        outline: 0;
+        width: 60%;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: 0.25s ease;
+        background-color: #ecf0f3;
+        box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+    }
+    
+    .search-profil:focus {
+        box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+    }
+    
+    .btn-search {
+        color: #000;
+        border: 0;
+        outline: 0;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .card-profil {
+        text-align: center;
+    }
+    
+    .foto {
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    
+    .nama-github {
+        font-size: 24px;
+        color: #fff;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .repo,
+    .follow,
+    .tgl-gabung {
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px;
+        display: inline-block;
+        margin-right: 10px;
+    }
 }

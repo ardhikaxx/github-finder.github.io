@@ -17,9 +17,10 @@ function cariProfil() {
 
             Swal.fire({
                 icon: 'success',
-                title: 'Profil ditemukan!',
+                title: 'Profil Github ditemukan!',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 1500,
+                zIndex: 9999
             });
         })
         .catch(error => {
@@ -28,7 +29,8 @@ function cariProfil() {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: error.message
+                text: error.message,
+                zIndex: 9999
             });
         });
 }
