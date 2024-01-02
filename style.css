@@ -13,6 +13,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    margin: 0;
 }
 
 .profil {
@@ -20,7 +21,7 @@ body {
     border-radius: 10px;
     padding: 25px;
     text-align: center;
-    width: 350px;
+    width: 320px;
 }
 
 .search-container {
@@ -49,7 +50,7 @@ body {
     outline: 0;
     font-weight: 700;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
@@ -96,7 +97,7 @@ body {
         border-radius: 10px;
         padding: 25px;
         text-align: center;
-        width: 320px;
+        width: 270px;
     }
     
     .search-container {
@@ -125,7 +126,7 @@ body {
         outline: 0;
         font-weight: 700;
         border-radius: 10px;
-        padding: 10px;
+        padding: 10px 20px;
         cursor: pointer;
     }
     
